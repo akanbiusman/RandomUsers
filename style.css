@@ -1,0 +1,92 @@
+/*General Styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: normal 16px sans-serif;
+    color: #000;
+}
+
+body{
+    background: url('../WeatherAPI/img/land.jpg');
+    background-repeat: no-repeat;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 80px;
+}
+
+.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+hr {
+    width: 250px;
+    height: 3px;
+    background-color: tomato;
+    border: 0;
+    margin-bottom: 50px;
+}
+
+section h3.title {
+    text-transform: capitalize;
+    font: bold 32px 'Cairo', sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+section p {
+    max-width: 775px;
+    line-height: 2;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+@media (max-width: 800px) {
+    section {
+        padding: 50px 20px;
+    }
+}
+
+/*Packages Section*/
+
+ul{
+    list-style-type: none;
+}
+
+.packages .grid li {
+    padding: 50px;
+    flex-basis: 50%;
+    text-align: center;
+    background-color: rgba(255, 99, 71,0.5);
+}
+
+.packages .grid li i {
+    color: #8c9eff;
+}
+
+.packages .grid li h4 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 25px 0;
+}
+
+@media (max-width: 800px) {
+    .packages .grid li {
+        flex-basis: 100%;
+        padding: 20px;
+        background-color: rgba(255, 99, 71,0.5);
+    }
+}
