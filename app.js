@@ -15,7 +15,5 @@ axios
     document.getElementById(
       "info"
     ).innerText = `${location.state}, ${location.country}`;
-
-    console.log(data);
   })
   .catch((err) => console.error("Something went wrong"));
