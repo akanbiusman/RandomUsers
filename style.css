@@ -12,7 +12,7 @@ html {
 }
 
 body{
-    background: url('../WeatherAPI/img/land.jpg');
+    background: url('./land.jpg');
     background-repeat: no-repeat;
 }
 
